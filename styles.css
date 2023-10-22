@@ -1,0 +1,71 @@
+:root {
+    --font-body: Poppins, sans-serif;
+    --secondary: #eef7fe;
+    --primary: #22215b;
+    --primary-light: #2f2f31;
+}
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html {
+    font-family: var(--font-body);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e7e9f0;
+}
+ul {
+    list-style: none;
+}
+button {
+    font-family: inherit;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.card {
+    background: #fff;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 32px;
+}
+.card__info__place {
+    font-size: 14px;
+    color: var(--primary-light);
+}
+.card__info__time {
+    font-size: 30px;
+    color: var(--primary);
+}
+.card__info__date {
+    font-size: 14px;
+    color: var(--primary-light);
+}
+.card__weather {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.card__weather__temp {
+    font-size: 30px;
+}
+.card__weather__icon {
+    animation: move 1s infinite alternate ease-in-out;
+}
+@keyframes move {
+    to {
+        transform: translateY(-10px);
+   }
+}
