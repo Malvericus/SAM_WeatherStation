@@ -7,15 +7,15 @@
 #include <Adafruit_Sensor.h>
 
 #define DHTPIN 5       
-#define DHTTYPE DHT11  // Define the type of DHT sensor
+#define DHTTYPE DHT11
 
 const int gasPin = A0;
 const int raindropPin = D7;
 int gasVal = 0;
 DHT dht(DHTPIN, DHTTYPE);
 
-const char * ssid = "Malvika's Galaxy";        // Replace with your network SSID
-const char * password = "malvika."; // Replace with your network password
+const char * ssid = "Malvika's Galaxy";
+const char * password = "malvika.";
 
 ESP8266WebServer server(80);
 
