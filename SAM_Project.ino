@@ -30,7 +30,7 @@ void handleRoot() {
   html += "<title>Weather Station</title>\n";
   html += "<style>\n";
   html += "* { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }\n";
-  html += "body {background-color: #152238;}\n";
+  html += "body { background-image: url('https://c4.wallpaperflare.com/wallpaper/535/254/360/trees-digital-art-geometry-forest-wallpaper-preview.jpg'); background-size: cover; }\n";
   html += ".card__weather { margin-left: 40%; margin-top: 5%; display: flex; align-items: center; gap: 10px; }\n";
   html += ".card__weather__temp { font-size: 30px; }\n";
   html += ".card__weather__icon { animation: move 1s infinite alternate ease-in-out; }\n";
@@ -100,6 +100,7 @@ void setup() {
   Serial.println(WiFi.localIP());
   server.on("/", handleRoot);
   server.begin();
+
 }
 
 void loop() {
